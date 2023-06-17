@@ -1,7 +1,7 @@
 import openai
 
 
-openai.api_key = "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"  # Replace with your actual API key
+openai.api_key = "OPENAI API KEY"  # Replace with your actual API key
 
 
 
