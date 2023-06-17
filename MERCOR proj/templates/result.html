@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GitHub Repositories</title>
+</head>
+<body>
+    <h1>Repositories:</h1>
+    <ul>
+        {% for repository in repositories %}
+            <li>{{ repository }}</li>
+            <ul>
+                {% for chunk in partitioned_files[repository] %}
+                    <li>
+                        Chunk:
+                        <ul>
+                            {% for file in chunk %}
+                                <li>{{ loop.index }}. {{ file.name }} - {{ file.size }} bytes</li>
+                                
+                            {% endfor %}
+                            {% for score in repository_scores[repository] %}
+                                    <ul><li>{{ loop.index }}. {{ score.score }}</li></ul>
+                            {% endfor %}
+                        </ul>
+                    </li>
+                {% endfor %}
+                 
+            </ul>
+        {% endfor %}
+    </ul>
+</body>
+</html>

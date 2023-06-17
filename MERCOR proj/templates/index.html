@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GitHub Repositories</title>
+</head>
+<body>
+    <h1>Repositories:</h1>
+    <form method="POST">
+        <input type="text" name="github_url" placeholder="Enter GitHub username or URL">
+        <button type="submit">Search</button>
+    </form>
+    <ul>
+        {% for index in range(repository_names|length) %}
+            <li>{{ repository_names[index] }}</li>
+            <ul>
+                {% for file in repository_files[index] %}
+                    <li>{{ file.name }} - {{ file.size }} bytes</li>
+                {% endfor %}
+            </ul>
+        {% endfor %}
+    </ul>
+</body>
+</html>
