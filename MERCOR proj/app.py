@@ -13,8 +13,8 @@ github_token = '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'
 max_tokens = 4000
 
 
-application = Flask(__name__)
-application.secret_key = secret_key
+app = Flask(__name__)
+app.secret_key = secret_key
 
 def calculate_average_complexity_score(output):
     # Extract numbers from the output string using regular expression
@@ -65,7 +65,7 @@ def chunk_file(file_path, chunk_size):
             chunks.append(data)
     return chunks
 
-@application.route('/', methods=['GET', 'POST'])
+@app.route('/', methods=['GET', 'POST'])
 def home():
     if request.method == 'POST':
         user_url = request.form.get('github_url')
@@ -147,6 +147,6 @@ def home():
 
 
 if __name__ == '__main__':
-    application.debug = True
-    application.run(debug=True)
+    app.debug = True
+    app.run(debug=True)
 
