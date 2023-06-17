@@ -31,7 +31,7 @@ To run the GitHub Analysis website locally, follow these steps:
 python app.py
 ```
 
-5. Open your web browser and visit `http://localhost:5000` to access the GitHub Analysis website.
+5. Open your web browser and visit `http://127.0.0.1:5000/` to access the GitHub Analysis website.
 
 ### Files and Functionality
 
