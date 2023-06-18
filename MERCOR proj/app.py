@@ -9,7 +9,7 @@ import os
 encoding = tiktoken.encoding_for_model("gpt-3.5-turbo")
 
 secret_key = os.urandom(24).hex()
-github_token = 'YOUR GITHUB API'
+github_token = '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'
 max_tokens = 4000
 
 
