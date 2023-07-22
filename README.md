@@ -44,6 +44,12 @@ The GitHub Analysis website allows users to enter a GitHub repository URL and an
 - The code snippets are sent to the GPT-3.5 model using prompt engineering techniques to generate complexity scores for each code snippet.
 - The complexity scores are then displayed on the web interface along with relevant repository, file, and file size information.
 
+### Screenshots
+![repowebpage_1](https://github.com/sobiness/Github-Automated-Analysis/assets/63402137/c74e06e4-9d95-4e6c-8d59-57491e2f0ca0)
+![repowebpage_2-2](https://github.com/sobiness/Github-Automated-Analysis/assets/63402137/6305ab85-5351-4ea6-a117-291192279604)
+
+
+
 ### Contact
 
 If you have any questions or need further assistance, please feel free to reach out to me. I'm more than happy to help!
